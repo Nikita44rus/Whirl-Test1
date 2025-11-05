@@ -1,0 +1,79 @@
+body{font-family: 
+    "inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container{
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;}
+
+
+.header{padding: 20px 0;}
+
+.header-row{
+    display: flex;
+    align-items: center;
+    gap: 36px;}
+
+.menu{padding:0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 24px;}
+
+.menu-link{
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #33383f;
+    text-decoration: none;
+}
+
+.btn{
+    display: block;
+    padding: 6px 20px;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 2ms;
+}
+
+.btn.blue{
+    color: #0070a0;}
+
+.btn.blue:hover{
+    background-color: #0070a0;
+    color: #fff;}
+
+.btn.white{
+    background-color: #0070a0;
+    color: #fff;}
+.btn.white:hover{
+    background-color: #fff;
+    color: #0070a0;}
+
+.header-btns{
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+}
+
+.inter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.fraunces{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
