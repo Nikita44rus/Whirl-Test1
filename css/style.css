@@ -8,8 +8,12 @@ body{font-family:
     width: 100%;
     margin: 0 auto;}
 
-
-.header{padding: 20px 0;}
+.header{
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;}
 
 .header-row{
     display: flex;
@@ -31,7 +35,9 @@ body{font-family:
 }
 
 .btn{
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     padding: 6px 20px;
     font-size: 15px;
     line-height: 160%;
@@ -44,9 +50,14 @@ body{font-family:
 .btn.blue{
     color: #0070a0;}
 
+.btn.blue svg path{stroke: #006B99;}
+
 .btn.blue:hover{
     background-color: #0070a0;
     color: #fff;}
+
+.btn.blue:hover svg path{
+    stroke: #fff;}
 
 .btn.white{
     background-color: #0070a0;
@@ -76,4 +87,46 @@ body{font-family:
     font-variation-settings:
     "SOFT" 0,
     "WONK" 0;
+}
+
+.hero{
+    padding: 145px 0 80px;}
+
+
+.hero-row{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+    }
+
+.hero-left{
+    max-width: 525px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.hero-title{
+    margin: 0;
+    font-family:"Fraunces", sans-serif;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 110%;
+    letter-spacing: 0em;
+    color: #1f1f1f;
+}
+
+.hero-desc{
+    margin: 0;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #1f1f1f;
+    max-width: 67%;
+}
+
+.hero-btns{
+    display: flex;
+    gap: 12px;
 }
