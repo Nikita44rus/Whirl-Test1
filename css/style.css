@@ -1,32 +1,38 @@
-body{font-family: 
-    "inter", sans-serif;
+body {
+    font-family:
+        "inter", sans-serif;
     font-optical-sizing: auto;
 }
 
-.container{
+.container {
     max-width: 1130px;
     width: 100%;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 
-.header{
+.header {
     top: 0;
     left: 0;
     padding: 20px 0;
     position: fixed;
-    width: 100%;}
+    width: 100%;
+}
 
-.header-row{
+.header-row {
     display: flex;
     align-items: center;
-    gap: 36px;}
+    gap: 36px;
+}
 
-.menu{padding:0;
+.menu {
+    padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 24px;}
+    gap: 24px;
+}
 
-.menu-link{
+.menu-link {
     font-size: 15px;
     line-height: 160%;
     letter-spacing: 0.01em;
@@ -34,7 +40,7 @@ body{font-family:
     text-decoration: none;
 }
 
-.btn{
+.btn {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -47,69 +53,78 @@ body{font-family:
     transition: 2ms;
 }
 
-.btn.blue{
-    color: #0070a0;}
+.btn.blue {
+    color: #0070a0;
+}
 
-.btn.blue svg path{stroke: #006B99;}
+.btn.blue svg path {
+    stroke: #006B99;
+}
 
-.btn.blue:hover{
+.btn.blue:hover {
     background-color: #0070a0;
-    color: #fff;}
+    color: #fff;
+}
 
-.btn.blue:hover svg path{
-    stroke: #fff;}
+.btn.blue:hover svg path {
+    stroke: #fff;
+}
 
-.btn.white{
+.btn.white {
     background-color: #0070a0;
-    color: #fff;}
-.btn.white:hover{
+    color: #fff;
+}
+
+.btn.white:hover {
     background-color: #fff;
-    color: #0070a0;}
+    color: #0070a0;
+}
 
-.header-btns{
+.header-btns {
     display: flex;
     gap: 12px;
     margin-left: auto;
 }
 
-.inter{
+.inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
 
-.fraunces{
+.fraunces {
     font-family: "Fraunces", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
+        "SOFT" 0,
+        "WONK" 0;
 }
 
-.hero{
-    padding: 145px 0 80px;}
+.hero {
+    padding: 145px 0 80px;
+}
 
 
-.hero-row{
+.hero-row {
     display: flex;
     align-items: center;
     gap: 24px;
     justify-content: space-between;
-    }
+}
 
-.hero-left{
+.hero-left {
     max-width: 525px;
     display: flex;
     flex-direction: column;
     gap: 21px;
 }
 
-.hero-title{
+.hero-title {
     margin: 0;
-    font-family:"Fraunces", sans-serif;
+    font-family: "Fraunces", sans-serif;
     font-weight: 400;
     font-size: 58px;
     line-height: 110%;
@@ -117,7 +132,7 @@ body{font-family:
     color: #1f1f1f;
 }
 
-.hero-desc{
+.hero-desc {
     margin: 0;
     font-size: 20px;
     line-height: 150%;
@@ -126,7 +141,46 @@ body{font-family:
     max-width: 67%;
 }
 
-.hero-btns{
+.hero-btns {
     display: flex;
     gap: 12px;
+}
+
+.advantages-item {
+    padding: 32px 32px 40px 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+}
+
+.advantages-item-title {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #1f1f1f;
+}
+
+.advantages-item-desc {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #1f1f1f;
+}
+
+.advantages-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -16px;
+}
+
+.advantages-item-container{
+    width: 33.3%;
+    padding: 16px;
+    box-sizing: border-box;
 }
