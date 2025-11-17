@@ -16,6 +16,7 @@ body {
     padding: 20px 0;
     position: fixed;
     width: 100%;
+    background-color: #fff;
 }
 
 .header-row {
@@ -183,4 +184,83 @@ body {
     width: 33.3%;
     padding: 16px;
     box-sizing: border-box;
+}
+
+.care{
+    background-color: #f7f9fa;
+    padding: 80px 0;
+    margin-top: 120px;}
+
+.care-title{
+    margin: 0 0 62px;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 120%;
+    letter-spacing: 0em;
+    max-width: 650px;
+    color: #1f1f1f;
+}
+
+.care-title span{
+    font-size: 39px;
+    line-height: 129%;
+    letter-spacing: 0.01em;}
+
+.care-faq{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    max-width: 450px;
+}
+
+.care-faq li{
+    padding: 16px 12px;
+    border-top: 1px solid #c2cdd8;
+    border-bottom: 1px solid #c2cdd8;
+}
+
+.care-faq-head{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+    font-family: "Fraunces", sans-serif;
+    line-height: 126%;
+    letter-spacing: 0.01em;
+    color: #626a72;
+}
+
+.care-faq-head:after{
+    content: "";
+    width: 18px;
+    height: 10px;
+    background: url(../images/patch_bottom.svg);
+    margin-left: auto;}
+
+.care-faq-body{
+    padding-left: 48px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    color: #1f1f1f;
+    transition: 0.3s;
+}
+
+.care-faq li:hover.care-faq-body{
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.care-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
