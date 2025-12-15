@@ -1,0 +1,37 @@
+$white: #fff;
+
+@mixin nameMixin($param:16px){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $param;
+}
+
+@mixin forTablet(){
+    @media (max-width:1024px){
+        @content;
+    }
+}
+body{
+    color: $white;
+    @include nameMixin();
+    @include forTablet(){
+        background-color: yellow
+    }
+}
+   
+.card {
+    @include nameMixin(24px);
+    img {
+        height: 500px;
+    }
+    &__image{
+        background-color: red;
+
+        &--big {
+            height: 800px;
+            
+            img{height: 1000px;}
+        }
+    }
+}

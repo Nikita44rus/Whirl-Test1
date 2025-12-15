@@ -1,0 +1,31 @@
+body {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+.card img {
+  height: 500px;
+}
+.card__image {
+  background-color: red;
+}
+.card__image--big {
+  height: 800px;
+}
+.card__image--big img {
+  height: 1000px;
+}

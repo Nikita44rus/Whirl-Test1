@@ -11,8 +11,10 @@
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="slick.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -172,6 +174,167 @@
 
 
 
+
+
+
+
+
+
+
+<form action="" method="post">
+    <input required placeholder="Текстовая подсказка" name="name" type="text">
+    <input required readonly name="email" type="email" value="12@mail.ru">
+    <input name="phone" type="tel">
+    <input id="check" type="checkbox" checked>
+    <input name="radio-1" type="radio">
+    <input name="radio-1" type="radio">
+    <input type="button" value="Кнопка">
+    <input type="submit" value="Отправить данные">
+    <input type="password">
+    <input type="file" multiple>
+    <input type="time">
+    <input type="date">
+    <input type="range" min="0" max="100">
+    <input type="hidden">
+    <input type="color">
+    <input type="reset" value="Сбросить"
+
+
+
+    <select>
+        <option value="">Значение 1</option>
+        <option selected value="">Значение 2</option>
+        <option value="">Значение 3</option>
+    </select>
+
+
+    <button type="">
+        Новая кнопка
+    </button>
+
+    <label for="check">Текстовая подсказка для Input</label>
+    <label class="checkbox">
+        <input type="checkbox"> Press
+        <span class="checkbox__wrapper">
+            I apply LA
+        </span>
+    </label>
+
+    <input type="submit" value="Отправить данные">
+    <textarea placeholder="Комментарий"></textarea>
+
+    <fieldset>
+        <legend>Надпись</legend>
+        <label>
+            <input type="radio">
+            Вариант 1
+        </label>
+        <label>
+            <input type="radio">
+            Вариант 2
+        </label>
+    </fieldset>
+
+<iframe src="" frameborder="0"></iframe>
+
+<video muted autoplay playsinline>
+    <source src="" type="mp4">
+    <source src="" type="wav">
+</video>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="slider">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+
+
+
+<a data-fancybox="1" href="images/bg.png">
+    <img src="images/bg.png" alt="">
+</a>
+<a data-fancybox="1" href="images/3195.jpg">
+    <img src="images/3195.jpg" alt="">
+</a>
+<a data-fancybox="1" href="images/bg.png">
+    <img src="images/bg.png" alt="">
+</a>
+
+<script src="jquery-3.7.1.js"></script>
+<script src="slick.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $('.slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<div class="grid">
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+    <div class="grid__item"></div>
+</div>
+
+
+<script>
+  AOS.init({
+    once:true,
+  });
+</script>
 </body>
 
 </html>

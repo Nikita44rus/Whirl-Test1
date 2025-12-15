@@ -264,3 +264,77 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+input:focus {
+    outline-color: orange;}
+
+input::placeholder {
+    color: red;
+}
+
+input:valid {outline-color: green;}
+input:invalid {outline-color: red;}
+
+/* Кастомный чекбокс */
+.checkbox__wrapper {
+    overflow: hidden;
+    position: relative;
+    padding-left: 24px;
+}
+
+.checkbox__wrapper:before,
+.checkbox__wrapper:after {
+    position: absolute;
+    content: '';
+}
+
+.checkbox__wrapper:before {
+    height: 16px;
+    width: 16px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    left: 0;
+    top: 1px;
+    border-radius: 4px;
+}
+
+.checkbox input{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkbox input:checked +.checkbox__wrapper:before {
+    background-color: green;
+}
+
+textarea{
+    resize: none
+}
+
+
+.item{
+    height: 300px;
+    border: 1px solid red;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    gap: 10px 24px;
+}
+
+.grid__item{
+    height: 300px;
+    border:1px solid indigo;
+    box-sizing: border-box;}
